@@ -19,7 +19,11 @@
         app:met_floatingLabelAlwaysShown = "true"
         app:met_floatingLabel="highlight"
         app:met_floatingLabelText="Id"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="50dp"
+        app:met_singleLineEllipsis="true"
+        app:met_minCharacters="6"
+        app:met_maxCharacters="20"
+        android:id="@+id/edit_Register_Id" />
 
     <com.rengwuxian.materialedittext.MaterialEditText
         android:layout_width="match_parent"
@@ -29,7 +33,11 @@
         app:met_floatingLabelAlwaysShown = "true"
         app:met_floatingLabel="highlight"
         app:met_floatingLabelText="Password"
-        tools:ignore="HardcodedText" />
+        app:met_singleLineEllipsis="true"
+        tools:ignore="HardcodedText"
+        app:met_minCharacters="6"
+        app:met_maxCharacters="20"
+        android:id="@+id/edit_Register_Password" />
 
     <com.rengwuxian.materialedittext.MaterialEditText
         android:layout_width="match_parent"
@@ -39,7 +47,11 @@
         app:met_floatingLabelAlwaysShown = "true"
         app:met_floatingLabel="highlight"
         app:met_floatingLabelText="NickName"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        app:met_singleLineEllipsis="true"
+        app:met_minCharacters="3"
+        app:met_maxCharacters="12"
+        android:id="@+id/edit_Register_Nickname" />
 
     <Button
         android:text="회원가입 완료"
