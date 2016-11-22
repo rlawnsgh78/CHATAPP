@@ -1,8 +1,0 @@
-package com.example.rlawnsgh78.chatapp;
-
-import java.util.HashMap;
-
-public interface Callbacks {
-    void success(HashMap params);
-    void fail(HashMap params);
-}
