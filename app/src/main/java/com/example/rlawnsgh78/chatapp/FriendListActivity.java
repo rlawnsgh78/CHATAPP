@@ -3,11 +3,19 @@ package com.example.rlawnsgh78.chatapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.ListView;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.melnykov.fab.FloatingActionButton;
 
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+
 import io.socket.client.Socket;
+import io.socket.emitter.Emitter;
 
 public class FriendListActivity extends AppCompatActivity {
     Socket mSocket;
@@ -34,6 +42,33 @@ public class FriendListActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        mSocket.emit("GetFriendList","");
+        final ListView friendList = (ListView) findViewById(R.id.list_friend);
+
+        mSocket.on("GetFriendListRes", new Emitter.Listener() {
+            @Override
+            public void call(Object... args) {
+                if(args[0]!= null){
+                    Gson gson = new Gson();
+                    Type type = new TypeToken<ArrayList<Friend>>(){}.getType();
+
+
+                    ArrayList<Friend> friendArrayList = gson.fromJson(args[0].toString(),type);
+                    FriendListViewAdapter friendListViewAdapter = new FriendListViewAdapter(friendArrayList,getApplicationContext());
+
+                    friendList.setAdapter(friendListViewAdapter);
+                    friendListViewAdapter.notifyDataSetChanged();
+                }else {
+
+                }
+
+            }
+        });
+
+        mSocket.emit("GetFriendList",SocketIOManager.getInstance().mLogin.getId());
+
+
+
+      //  friendList.setAdapter();
+
     }
 }

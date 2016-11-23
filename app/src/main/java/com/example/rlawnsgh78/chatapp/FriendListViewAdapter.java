@@ -1,13 +1,10 @@
 package com.example.rlawnsgh78.chatapp;
 
 import android.content.Context;
-import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -17,11 +14,11 @@ import java.util.ArrayList;
  */
 
 public class FriendListViewAdapter extends BaseAdapter {
-    ArrayList<FriendItem> friendItemArrayList;
+    ArrayList<Friend> friendItemArrayList;
     Context context;
     LayoutInflater layoutInflater;
 
-    public FriendListViewAdapter(ArrayList<FriendItem> friendItemArrayList, Context context) {
+    public FriendListViewAdapter(ArrayList<Friend> friendItemArrayList, Context context) {
         this.friendItemArrayList = friendItemArrayList;
         this.context = context;
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -49,10 +46,10 @@ public class FriendListViewAdapter extends BaseAdapter {
             res = R.layout.item_friend;
             convertView = layoutInflater.inflate(res, parent, false);
         }
-        FriendItem clockListViewItem = friendItemArrayList.get(position);
+        Friend friend = friendItemArrayList.get(position);
 
         TextView txtFriend = (TextView) convertView.findViewById(R.id.txtFriend);
-        txtFriend.setText(clockListViewItem.friendNickname);
+        txtFriend.setText(friend.friend_nickname);
 
 
         convertView.setOnClickListener(new View.OnClickListener() {
