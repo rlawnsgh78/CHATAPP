@@ -20,7 +20,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".FriendListActivity" />
-        <activity android:name=".FriendSerchActivity"></activity>
+        <activity android:name=".FriendSerchActivity" />
+        <activity android:name=".ChatActivity"></activity>
     </application>
 
 </manifest>
