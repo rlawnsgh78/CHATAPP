@@ -14,6 +14,8 @@ public class SocketIOManager {
 
     public Socket mSocket;
 
+    public Login mLogin;
+
     public static SocketIOManager getInstance() {
             if (instance == null) {
                 instance = new SocketIOManager();

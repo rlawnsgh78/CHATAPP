@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -26,7 +25,6 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         mSocket = SocketIOManager.getInstance().mSocket;
-        mSocket.connect();
 
         final MaterialEditText editRegisterId = (MaterialEditText) findViewById(R.id.edit_Register_Id);
         editRegisterId.addTextChangedListener(new TextWatcher() {

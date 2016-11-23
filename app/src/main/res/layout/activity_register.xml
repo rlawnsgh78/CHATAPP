@@ -37,7 +37,8 @@
         tools:ignore="HardcodedText"
         app:met_minCharacters="6"
         app:met_maxCharacters="20"
-        android:id="@+id/edit_Register_Password" />
+        android:id="@+id/edit_Register_Password"
+        android:inputType="textPassword" />
 
     <com.rengwuxian.materialedittext.MaterialEditText
         android:layout_width="match_parent"
