@@ -77,15 +77,22 @@ public class ChatActivity extends AppCompatActivity {
             }
         });
 
-        mSocket.on("SendMessageRes" + SocketIOManager.getInstance().mLogin.nickname, new Emitter.Listener() {
+        mSocket.on("MessageRes" + SocketIOManager.getInstance().mLogin.nickname, new Emitter.Listener() {
             @Override
             public void call(Object... args) {
                 Type type = new TypeToken<Message>() {
                 }.getType();
                 Message message = gson.fromJson(args[0].toString(), type);
+                chatListViewAdapter.messageArrayList.add(message);
 
-                messageArrayList.add(message);
-                chatListViewAdapter.notifyDataSetChanged();
+                Handler handler = new Handler(Looper.getMainLooper());
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        chatListViewAdapter.notifyDataSetChanged();
+                    }
+                });
+
             }
         });
 
