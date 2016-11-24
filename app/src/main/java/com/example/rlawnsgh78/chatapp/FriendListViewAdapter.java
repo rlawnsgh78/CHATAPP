@@ -56,21 +56,11 @@ public class FriendListViewAdapter extends BaseAdapter {
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent chatIntent = new Intent(context,ChatActivity.class);
-                chatIntent.putExtra("FreindNickname",friend.friend_nickname);
+                Intent chatIntent = new Intent(context, ChatActivity.class);
+                chatIntent.putExtra("FreindNickname", friend.friend_nickname);
                 context.startActivity(chatIntent);
             }
         });
-
-
-//        RelativeLayout areaClockItem = (RelativeLayout)convertView.findViewById(R.id.areaClockItem);
-//        areaClockItem.setBackgroundColor(ContextCompat.getColor(context,clockListViewItem.colorBackground));
-//
-//        ImageView imgTextClock = (ImageView) convertView.findViewById(R.id.imgTextClock);
-//        imgTextClock.setImageDrawable(ContextCompat.getDrawable(context,clockListViewItem.imgTextClock));
-//
-//        ImageView imgToggle = (ImageView) convertView.findViewById(R.id.imgToggle);
-//        imgToggle.setImageDrawable(ContextCompat.getDrawable(context,clockListViewItem.imgToggle));
 
         return convertView;
     }

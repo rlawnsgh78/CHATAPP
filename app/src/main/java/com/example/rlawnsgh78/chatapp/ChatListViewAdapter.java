@@ -59,7 +59,7 @@ public class ChatListViewAdapter extends BaseAdapter {
             txtMyChatMessage.setText(message.message);
         }else {
             TextView txtChatFreindNickname = (TextView) convertView.findViewById(R.id.txt_chat_friend_nickname);
-            txtChatFreindNickname.setText(message.user_nickname);
+            txtChatFreindNickname.setText(message.user_nickname + " : ");
 
             TextView txtChatMessage = (TextView) convertView.findViewById(R.id.txt_chat_message);
             txtChatMessage.setText(message.message);
