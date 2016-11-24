@@ -6,7 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.TextView;
+
+import com.google.gson.Gson;
 
 import io.socket.client.Socket;
 
@@ -17,16 +18,17 @@ import io.socket.client.Socket;
 public class EmoticonAdapter extends BaseAdapter {
     Socket mSocket;
     private LayoutInflater layoutInflater;
-    private boolean isGrid;
+    private String friendNickname;
 
-    public EmoticonAdapter(Context context) {
+    public EmoticonAdapter(Context context, String friendNickname) {
         layoutInflater = LayoutInflater.from(context);
         mSocket = SocketIOManager.getInstance().mSocket;
+        this.friendNickname = friendNickname;
     }
 
     @Override
     public int getCount() {
-        return 6;
+        return 2;
     }
 
     @Override
@@ -40,7 +42,7 @@ public class EmoticonAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, final ViewGroup parent) {
         ViewHolder viewHolder;
         View view = convertView;
 
@@ -58,12 +60,6 @@ public class EmoticonAdapter extends BaseAdapter {
         switch (position) {
             case 0:
                 viewHolder.imageView.setImageResource(R.drawable.icb);
-                viewHolder.imageView.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        mSocket.emit("Emoticon");
-                    }
-                });
                 break;
             case 1:
                 viewHolder.imageView.setImageResource(R.drawable.icw);
@@ -72,6 +68,16 @@ public class EmoticonAdapter extends BaseAdapter {
                 viewHolder.imageView.setImageResource(R.drawable.icw);
                 break;
         }
+        viewHolder.imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Message message = new Message("emoticon~!@" + position, SocketIOManager.getInstance().mLogin.nickname, friendNickname, 1);
+                Gson gson = new Gson();
+                String json = gson.toJson(message);
+
+                mSocket.emit("SendMessage", json);
+            }
+        });
 
         return view;
     }

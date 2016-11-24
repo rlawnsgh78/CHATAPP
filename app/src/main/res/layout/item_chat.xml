@@ -11,7 +11,9 @@
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
         android:id="@+id/txt_chat_friend_nickname"
-        android:layout_marginLeft="16dp" />
+        android:layout_marginLeft="16dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
 
     <TextView
         android:text="TextView"

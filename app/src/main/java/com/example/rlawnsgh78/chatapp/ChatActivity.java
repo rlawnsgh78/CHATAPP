@@ -98,7 +98,7 @@ public class ChatActivity extends AppCompatActivity {
                 String userNickname = SocketIOManager.getInstance().mLogin.getNickname();
                 String friendNickname = getIntent().getStringExtra("FreindNickname");
 
-                Message message = new Message(messageStr, userNickname, friendNickname);
+                Message message = new Message(messageStr, userNickname, friendNickname,0);
 
                 Gson gson = new Gson();
                 String json = gson.toJson(message);
@@ -109,12 +109,13 @@ public class ChatActivity extends AppCompatActivity {
             }
         });
 
-        EmoticonAdapter emoticonAdapter = new EmoticonAdapter(getApplicationContext());
+        EmoticonAdapter emoticonAdapter = new EmoticonAdapter(getApplicationContext(), getIntent().getStringExtra("FreindNickname"));
         final DialogPlus dialog = DialogPlus.newDialog(this)
                 .setAdapter(emoticonAdapter)
                 .setOnItemClickListener(new OnItemClickListener() {
                     @Override
                     public void onItemClick(DialogPlus dialog, Object item, View view, int position) {
+                        dialog.dismiss();
                     }
                 })
                 .setExpanded(true)  // This will enable the expand feature, (similar to android L share dialog)
