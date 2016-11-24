@@ -89,6 +89,7 @@ public class ChatActivity extends AppCompatActivity {
             }
         });
 
+
         Button btnSend = (Button) findViewById(R.id.btn_send);
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -131,10 +132,4 @@ public class ChatActivity extends AppCompatActivity {
         });
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        mSocket.emit("");
-
-    }
 }

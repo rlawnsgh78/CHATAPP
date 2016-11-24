@@ -42,11 +42,11 @@ public class FriendListViewAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        if (convertView == null) {
-            int res = 0;
-            res = R.layout.item_friend;
-            convertView = layoutInflater.inflate(res, parent, false);
-        }
+
+
+        int res = R.layout.item_friend;
+        convertView = layoutInflater.inflate(res, parent, false);
+
         final Friend friend = friendItemArrayList.get(position);
 
         TextView txtFriend = (TextView) convertView.findViewById(R.id.txtFriend);
@@ -57,6 +57,7 @@ public class FriendListViewAdapter extends BaseAdapter {
             @Override
             public void onClick(View view) {
                 Intent chatIntent = new Intent(context, ChatActivity.class);
+                chatIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 chatIntent.putExtra("FreindNickname", friend.friend_nickname);
                 context.startActivity(chatIntent);
             }

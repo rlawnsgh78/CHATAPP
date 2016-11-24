@@ -41,6 +41,7 @@ public class FriendListActivity extends AppCompatActivity {
 
     }
 
+    FriendListViewAdapter friendListViewAdapter;
     @Override
     protected void onResume() {
         super.onResume();
@@ -54,7 +55,7 @@ public class FriendListActivity extends AppCompatActivity {
                     Type type = new TypeToken<ArrayList<Friend>>(){}.getType();
 
                     ArrayList<Friend> friendArrayList = gson.fromJson(args[0].toString(),type);
-                    final FriendListViewAdapter friendListViewAdapter = new FriendListViewAdapter(friendArrayList,getApplicationContext());
+                    friendListViewAdapter = new FriendListViewAdapter(friendArrayList,getApplicationContext());
 
                     Handler handler = new Handler(Looper.getMainLooper());
                     handler.post(new Runnable() {
