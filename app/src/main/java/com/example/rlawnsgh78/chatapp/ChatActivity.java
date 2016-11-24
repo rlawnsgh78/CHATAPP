@@ -11,6 +11,8 @@ import android.widget.ListView;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.orhanobut.dialogplus.DialogPlus;
+import com.orhanobut.dialogplus.OnItemClickListener;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -104,6 +106,26 @@ public class ChatActivity extends AppCompatActivity {
                 mSocket.emit("SendMessage", json);
 
                 editChat.setText("");
+            }
+        });
+
+        EmoticonAdapter emoticonAdapter = new EmoticonAdapter(getApplicationContext());
+        final DialogPlus dialog = DialogPlus.newDialog(this)
+                .setAdapter(emoticonAdapter)
+                .setOnItemClickListener(new OnItemClickListener() {
+                    @Override
+                    public void onItemClick(DialogPlus dialog, Object item, View view, int position) {
+                    }
+                })
+                .setExpanded(true)  // This will enable the expand feature, (similar to android L share dialog)
+                .create();
+       // dialog.show();
+
+        Button btnEmoticon = (Button) findViewById(R.id.btn_emoticon);
+        btnEmoticon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.show();
             }
         });
     }
