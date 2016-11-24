@@ -26,7 +26,7 @@ public class SocketIOManager {
 
     public SocketIOManager() {
         try {
-            mSocket = IO.socket("http://192.168.0.7:3000");
+            mSocket = IO.socket("http://192.168.0.2:3000");
         } catch (Exception e) {
             Log.d("Error","Socket.io connect errr URI");
         }

@@ -1,6 +1,7 @@
 package com.example.rlawnsgh78.chatapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,7 +47,7 @@ public class FriendListViewAdapter extends BaseAdapter {
             res = R.layout.item_friend;
             convertView = layoutInflater.inflate(res, parent, false);
         }
-        Friend friend = friendItemArrayList.get(position);
+        final Friend friend = friendItemArrayList.get(position);
 
         TextView txtFriend = (TextView) convertView.findViewById(R.id.txtFriend);
         txtFriend.setText(friend.friend_nickname);
@@ -55,7 +56,9 @@ public class FriendListViewAdapter extends BaseAdapter {
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent chatIntent = new Intent(context,ChatActivity.class);
+                chatIntent.putExtra("FreindNickname",friend.friend_nickname);
+                context.startActivity(chatIntent);
             }
         });
 

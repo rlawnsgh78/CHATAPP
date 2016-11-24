@@ -1,6 +1,8 @@
 package com.example.rlawnsgh78.chatapp;
 
 import android.content.Intent;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -51,12 +53,18 @@ public class FriendListActivity extends AppCompatActivity {
                     Gson gson = new Gson();
                     Type type = new TypeToken<ArrayList<Friend>>(){}.getType();
 
-
                     ArrayList<Friend> friendArrayList = gson.fromJson(args[0].toString(),type);
-                    FriendListViewAdapter friendListViewAdapter = new FriendListViewAdapter(friendArrayList,getApplicationContext());
+                    final FriendListViewAdapter friendListViewAdapter = new FriendListViewAdapter(friendArrayList,getApplicationContext());
 
-                    friendList.setAdapter(friendListViewAdapter);
-                    friendListViewAdapter.notifyDataSetChanged();
+                    Handler handler = new Handler(Looper.getMainLooper());
+                    handler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            friendList.setAdapter(friendListViewAdapter);
+                            friendListViewAdapter.notifyDataSetChanged();
+                        }
+                    });
+
                 }else {
 
                 }

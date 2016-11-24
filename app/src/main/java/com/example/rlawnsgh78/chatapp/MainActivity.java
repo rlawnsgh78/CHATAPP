@@ -40,12 +40,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 mSocket.on("LoginRes", new Emitter.Listener() {
                     @Override
-                    public void call(Object... args) {
+                    public void call(final Object... args) {
                         Handler handler = new Handler(Looper.getMainLooper());
-                        if (args[0].equals(1)) {
+                        if (!args[0].equals(0)) {
                             handler.post(new Runnable() {
                                 @Override
                                 public void run() {
+                                    SocketIOManager.getInstance().mLogin.nickname = args[0].toString();
                                     Toast.makeText(getApplicationContext(), "로그인 성공", Toast.LENGTH_SHORT).show();
                                     Intent loginIntent = new Intent(getApplication(), FriendListActivity.class);
                                     startActivity(loginIntent);

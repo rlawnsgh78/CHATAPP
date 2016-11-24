@@ -7,6 +7,7 @@ package com.example.rlawnsgh78.chatapp;
 public class Login {
     private String id;
     private String password;
+    public String nickname;
 
     public Login(String id, String password) {
         this.id = id;
@@ -16,4 +17,10 @@ public class Login {
     public String getId() {
         return id;
     }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    
 }
