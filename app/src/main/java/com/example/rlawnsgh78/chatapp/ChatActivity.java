@@ -39,8 +39,6 @@ public class ChatActivity extends AppCompatActivity {
         final Gson gson = new Gson();
 
 
-
-
         mSocket.on("GetMessageListRes", new Emitter.Listener() {
             @Override
             public void call(Object... args) {
@@ -52,6 +50,7 @@ public class ChatActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         chatListViewAdapter.notifyDataSetChanged();
+                        listChat.smoothScrollToPosition(chatListViewAdapter.messageArrayList.size() -1);
                     }
                 });
             }
@@ -75,12 +74,13 @@ public class ChatActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         chatListViewAdapter.notifyDataSetChanged();
+                        listChat.smoothScrollToPosition(chatListViewAdapter.messageArrayList.size() -1);
                     }
                 });
             }
         });
 
-        String msg = SocketIOManager.getInstance().mLogin.getNickname();
+        String msg = SocketIOManager.getInstance().mLogin.getNickname() + getIntent().getStringExtra("FreindNickname");
         mSocket.on(msg, new Emitter.Listener() {
             @Override
             public void call(Object... args) {
@@ -95,6 +95,7 @@ public class ChatActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         chatListViewAdapter.notifyDataSetChanged();
+                        listChat.smoothScrollToPosition(chatListViewAdapter.messageArrayList.size() -1);
                     }
                 });
             }
