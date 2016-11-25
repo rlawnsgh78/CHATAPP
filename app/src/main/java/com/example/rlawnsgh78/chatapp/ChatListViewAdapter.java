@@ -48,51 +48,87 @@ public class ChatListViewAdapter extends BaseAdapter {
         int res = 0;
 
 
-            if(myMessageCheck){
-                if(message.emoticonCheck == 1){
-                    res = R.layout.itme_my_chat_emoticon;
-                }else {
-                    res = R.layout.item_my_chat;
-                }
-
-            }else {
-                if(message.emoticonCheck == 1){
-                    res = R.layout.item_chat_emoticon;
-                }else {
-                    res = R.layout.item_chat;
-                }
-
+        if (myMessageCheck) {
+            if (message.emoticonCheck == 1) {
+                res = R.layout.itme_my_chat_emoticon;
+            } else {
+                res = R.layout.item_my_chat;
             }
 
-            convertView = layoutInflater.inflate(res, parent, false);
-        
+        } else {
+            if (message.emoticonCheck == 1) {
+                res = R.layout.item_chat_emoticon;
+            } else {
+                res = R.layout.item_chat;
+            }
 
-        if(myMessageCheck){
-            if(message.emoticonCheck == 1){
+        }
+
+        convertView = layoutInflater.inflate(res, parent, false);
+
+
+        if (myMessageCheck) {
+            if (message.emoticonCheck == 1) {
                 ImageView imgMyChatEmoticon = (ImageView) convertView.findViewById(R.id.img_my_emoticon);
 
-                if("emoticon~!@0".equals(message.message)){
-                    imgMyChatEmoticon.setImageResource(R.drawable.icb);
-                }else if("emoticon~!@1".equals(message.message)){
-                    imgMyChatEmoticon.setImageResource(R.drawable.icw);
+                switch (message.message) {
+                    case "emoticon~!@" + 0:
+                        imgMyChatEmoticon.setImageResource(R.drawable.emoticon_box_close);
+                        break;
+                    case "emoticon~!@" + 1:
+                        imgMyChatEmoticon.setImageResource(R.drawable.emoticon_box_open);
+                        break;
+                    case "emoticon~!@" + 2:
+                        imgMyChatEmoticon.setImageResource(R.drawable.emoticon_box_semi);
+                        break;
+                    case "emoticon~!@" + 3:
+                        imgMyChatEmoticon.setImageResource(R.drawable.emoticon_corcodile);
+                        break;
+                    case "emoticon~!@" + 4:
+                        imgMyChatEmoticon.setImageResource(R.drawable.emoticon_peterpen);
+                        break;
+                    case "emoticon~!@" + 5:
+                        imgMyChatEmoticon.setImageResource(R.drawable.emoticon_pirate);
+                        break;
+                    case "emoticon~!@" + 6:
+                        imgMyChatEmoticon.setImageResource(R.drawable.emoticon_sleep);
+                        break;
                 }
 
-            }else {
+            } else {
                 TextView txtMyChatMessage = (TextView) convertView.findViewById(R.id.txt_my_chat_message);
                 txtMyChatMessage.setText(message.message);
             }
 
-        }else {
+        } else {
             TextView txtChatFreindNickname = (TextView) convertView.findViewById(R.id.txt_chat_friend_nickname);
             txtChatFreindNickname.setText(message.user_nickname + " : ");
-            if(message.emoticonCheck == 1){
+            if (message.emoticonCheck == 1) {
                 ImageView imgChatEmoticon = (ImageView) convertView.findViewById(R.id.img_chat_emoticon);
-                if("emoticon~!@0".equals(message.message)){
-                    imgChatEmoticon.setImageResource(R.drawable.icb);
-                }else if("emoticon~!@1".equals(message.message)){
-                    imgChatEmoticon.setImageResource(R.drawable.icw);
+                switch (message.message) {
+                    case "emoticon~!@" + 0:
+                        imgChatEmoticon.setImageResource(R.drawable.emoticon_box_close);
+                        break;
+                    case "emoticon~!@" + 1:
+                        imgChatEmoticon.setImageResource(R.drawable.emoticon_box_open);
+                        break;
+                    case "emoticon~!@" + 2:
+                        imgChatEmoticon.setImageResource(R.drawable.emoticon_box_semi);
+                        break;
+                    case "emoticon~!@" + 3:
+                        imgChatEmoticon.setImageResource(R.drawable.emoticon_corcodile);
+                        break;
+                    case "emoticon~!@" + 4:
+                        imgChatEmoticon.setImageResource(R.drawable.emoticon_peterpen);
+                        break;
+                    case "emoticon~!@" + 5:
+                        imgChatEmoticon.setImageResource(R.drawable.emoticon_pirate);
+                        break;
+                    case "emoticon~!@" + 6:
+                        imgChatEmoticon.setImageResource(R.drawable.emoticon_sleep);
+                        break;
                 }
-            }else {
+            } else {
                 TextView txtChatMessage = (TextView) convertView.findViewById(R.id.txt_chat_message);
                 txtChatMessage.setText(message.message);
             }

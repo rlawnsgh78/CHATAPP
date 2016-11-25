@@ -12,6 +12,7 @@ import android.widget.ListView;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.orhanobut.dialogplus.DialogPlus;
+import com.orhanobut.dialogplus.OnClickListener;
 import com.orhanobut.dialogplus.OnItemClickListener;
 
 import java.lang.reflect.Type;
@@ -122,18 +123,12 @@ public class ChatActivity extends AppCompatActivity {
         });
 
         EmoticonAdapter emoticonAdapter = new EmoticonAdapter(getApplicationContext(), getIntent().getStringExtra("FreindNickname"));
-        final DialogPlus dialog = DialogPlus.newDialog(this)
+        final DialogPlus dialog; dialog = DialogPlus.newDialog(this)
                 .setAdapter(emoticonAdapter)
-                .setOnItemClickListener(new OnItemClickListener() {
-                    @Override
-                    public void onItemClick(DialogPlus dialog, Object item, View view, int position) {
-                        dialog.dismiss();
-                    }
-                })
                 .setExpanded(true)  // This will enable the expand feature, (similar to android L share dialog)
                 .create();
-        // dialog.show();
 
+        emoticonAdapter.setDialogPlus(dialog);
         Button btnEmoticon = (Button) findViewById(R.id.btn_emoticon);
         btnEmoticon.setOnClickListener(new View.OnClickListener() {
             @Override

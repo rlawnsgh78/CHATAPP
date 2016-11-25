@@ -2,238 +2,256 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_b56bc1c598b05bdc31257fc2aa821b01aa6a059d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.1_26b7dbeeb828fb124b8fae8e946f7b9b8b5bb0a2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/exploded-aar/com.orhanobut/dialogplus/1.11/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="184f86117c6463267c1f0deba84d4853cb165c40">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/com.orhanobut-dialogplus-1.11_5f65051ae6c494a2e924dbeb79499d3cf52a3f96.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/exploded-aar/com.melnykov/floatingactionbutton/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8c6ebb7d087d1a30bf84356bd2aecf85309fc024">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/com.melnykov-floatingactionbutton-1.3.0_3c5c7c02f064955d1251336e97d75dde9d9279ae.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/library-2.4.0_247a168d55017a5349b0a983946429a6b18a399f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_2dba5c80c72c8ac78fc254fadb760bcdcbbe097e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_250463b94ea58a795e54a014afb9ee8fbbd4ecfb.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.1_86a7a2d6db60548bb0359ee8c917838ecdf7a913.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_91f9293fc534ee3ab12f216a4989c3da15914369.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.1_2de5b6b6200732df6556d68e99e01a0132829762.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-21.0.3_7ae7a20bc35cb808c196033b04c0a213d699efca.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.1_da9a6b5f6bfa0cab66835a85084b7d44729a66d3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/.gradle/caches/modules-2/files-2.1/io.socket/socket.io-client/0.8.2/96fd0e4a99e71d688b7267e12d2a5a137519d92e/socket.io-client-0.8.2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="96fd0e4a99e71d688b7267e12d2a5a137519d92e">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/socket.io-client-0.8.2_7ba98286c53cc8a9157d46710b52d9bb608d5348.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.1_24b9bfb35d6819906094074e0bbbf0e46940fbfe.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/exploded-aar/com.rengwuxian.materialedittext/library/2.1.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="288913b440a3c61c30aa171095453a605432277a">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/com.rengwuxian.materialedittext-library-2.1.4_44f8757cabc8c4a1b348b8ccc9b2e707d63acdf1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.1_45ceb307413d40916b8b73888feba36e48c7721c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1_f1f97049f35def90b6d97adb3a709a200022c782.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/gson-2.8.0_f0cbd8f22e7860e60ece21fd23cfda0c2059cd6d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_6ab20c6d3438551ce5f568a36da2467cfda8dfaa.jar" />
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.1_d0d2bcd94efed0466a04d66d5563586c135eeb25\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\exploded-aar\com.melnykov\floatingactionbutton\1.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8c6ebb7d087d1a30bf84356bd2aecf85309fc024">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.melnykov-floatingactionbutton-1.3.0_4cd5d424bcf22102858e613e67132cdb9a9080d3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.0.1_75af0881b9776e44c9c228b8c37d4abac9030152\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-21.0.3_fabb779de053d240bd977a91c64674b014f26889\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-ws\3.4.1\8ace66ef7002d98f633377c9e67daeeb196d8c3b\okhttp-ws-3.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-ws-3.4.1_b06176900c6fe378ed1b2752b2478e8c29ca15b7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.0.1_66bc929b571d13d196f894b458d4b4c89791fae2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.9.0\f824591a0016efbaeddb8300bee54832a1398cfa\okio-1.9.0.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/okio-1.9.0_434dfd636471abca5e8ce1208021cc5d086cc36d.jar" />
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.9.0_8a8f47a8772793bc441882d2c1b5d78b479b2132\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.0.1_40f0dc1fa28741b745fb807f86e30b739ae95aeb.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/.gradle/caches/modules-2/files-2.1/io.socket/engine.io-client/0.8.2/2b23f3e731f21c2009ab0a10da8254a69693767d/engine.io-client-0.8.2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="2b23f3e731f21c2009ab0a10da8254a69693767d">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/engine.io-client-0.8.2_8ea2bb9d1dc3742f8d2139d48a0665e6b39da77b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_aacf8f8dd7a47bb4e8b0f3d9c226ed1c9841cd84.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_713e88318ad40f2d4dccbaf511ba3aab3d0cf503.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_f40b496b6f8f17db3747cb35fe3e1aacfde43bc1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
-        <dex dex="/Users/rlawnsgh78/Desktop/CHATAPP/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_1e6ba4aef440d9ab53df96d1208db1a5fbb09e34.jar" />
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_08e99e198c88242ad4ef51dd75f281948276e3c7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.0.1_7c291dbe3634d7a135dea06db11d64e165f0b212\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-2.4.0_dff0ccc13cfc060eb2e1c8b44de9aa56314f4e55\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.0\c4ba5371a29ac9b2ad6129b1d39ea38750043eff\gson-2.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.8.0_16b704a4a711f23ca0bbf6785dec634d3a616f3d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\exploded-aar\com.rengwuxian.materialedittext\library\2.1.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="288913b440a3c61c30aa171095453a605432277a">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.rengwuxian.materialedittext-library-2.1.4_dbada832638355c22886172cdf939cfe639ab019\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_52382c8f51c6c431d569a750d9b5651d0879fcc1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8f7d30d110dee6987f4b20459013c53f1f8ee1bb">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_7b7c16bdb18fd77f9c9d7b16aa5cb3525db1a53c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_9d6a13277cfadc8ef0f699a8e3b63d895c1cf3af\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0f8d524419ecc93086db74503bbbff994609b5d9">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_b15799a3bcdfcf7412e1f5cd1dcb86dc1ed1aa21\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\.gradle\caches\modules-2\files-2.1\io.socket\socket.io-client\0.8.2\96fd0e4a99e71d688b7267e12d2a5a137519d92e\socket.io-client-0.8.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="96fd0e4a99e71d688b7267e12d2a5a137519d92e">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\socket.io-client-0.8.2_44c3a6ceb458c2fc66b89b7cf350d4914210ae58\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_323632ccdf629674ef591f2408a3b2e531a86ec7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.0.1_5493d37b575f748cc5e1835ef2b43934c2a9dd51\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.1_716fc4069252925d8c510de149e781ecac001070\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\.gradle\caches\modules-2\files-2.1\io.socket\engine.io-client\0.8.2\2b23f3e731f21c2009ab0a10da8254a69693767d\engine.io-client-0.8.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2b23f3e731f21c2009ab0a10da8254a69693767d">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\engine.io-client-0.8.2_0aa104186cc262c3b5c5fec5a97c67757a916de3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.1\support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.1_6aaeb49f104d307c406a47508607a6bdc1ec5424\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_1b1767a772ee49cfab4cbdc9a727cd4522815990\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.0.1_9338a23b309b853f492a3bcd023717bbeb5d6717\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.1_d0dab64c31125e979b32f21ac78b4ab9f83430c4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\exploded-aar\com.orhanobut\dialogplus\1.11\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="184f86117c6463267c1f0deba84d4853cb165c40">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.orhanobut-dialogplus-1.11_223025dd292d455921a80352a596b026719fa1f5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.4.1\c7c4f9e35c2fd5900da24f9872e3971801f08ce0\okhttp-3.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.4.1_db5151e939272e23ceec458b0033d2d2d238b38d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.1_bcc00c14845cfed896e515a600780fb6e266f815\classes.dex" />
     </item>
 
 </items>
