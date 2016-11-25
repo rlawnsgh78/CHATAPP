@@ -38,6 +38,9 @@ public class ChatActivity extends AppCompatActivity {
 
         final Gson gson = new Gson();
 
+
+
+
         mSocket.on("GetMessageListRes", new Emitter.Listener() {
             @Override
             public void call(Object... args) {
@@ -77,12 +80,14 @@ public class ChatActivity extends AppCompatActivity {
             }
         });
 
-        mSocket.on("MessageRes" + SocketIOManager.getInstance().mLogin.nickname, new Emitter.Listener() {
+        String msg = SocketIOManager.getInstance().mLogin.getNickname();
+        mSocket.on(msg, new Emitter.Listener() {
             @Override
             public void call(Object... args) {
                 Type type = new TypeToken<Message>() {
                 }.getType();
                 Message message = gson.fromJson(args[0].toString(), type);
+
                 chatListViewAdapter.messageArrayList.add(message);
 
                 Handler handler = new Handler(Looper.getMainLooper());
@@ -92,10 +97,8 @@ public class ChatActivity extends AppCompatActivity {
                         chatListViewAdapter.notifyDataSetChanged();
                     }
                 });
-
             }
         });
-
 
         Button btnSend = (Button) findViewById(R.id.btn_send);
         btnSend.setOnClickListener(new View.OnClickListener() {
@@ -106,7 +109,7 @@ public class ChatActivity extends AppCompatActivity {
                 String userNickname = SocketIOManager.getInstance().mLogin.getNickname();
                 String friendNickname = getIntent().getStringExtra("FreindNickname");
 
-                Message message = new Message(messageStr, userNickname, friendNickname,0);
+                Message message = new Message(messageStr, userNickname, friendNickname, 0);
 
                 Gson gson = new Gson();
                 String json = gson.toJson(message);
@@ -128,7 +131,7 @@ public class ChatActivity extends AppCompatActivity {
                 })
                 .setExpanded(true)  // This will enable the expand feature, (similar to android L share dialog)
                 .create();
-       // dialog.show();
+        // dialog.show();
 
         Button btnEmoticon = (Button) findViewById(R.id.btn_emoticon);
         btnEmoticon.setOnClickListener(new View.OnClickListener() {
