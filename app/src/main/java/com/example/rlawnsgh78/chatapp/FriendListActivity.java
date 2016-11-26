@@ -84,6 +84,12 @@ public class FriendListActivity extends AppCompatActivity {
         }
         mSocket.emit("GetFriendList",SocketIOManager.getInstance().mLogin.getId());
 
+        mSocket.on("GetFriendListReq", new Emitter.Listener() {
+            @Override
+            public void call(Object... args) {
+                mSocket.emit("GetFriendList",SocketIOManager.getInstance().mLogin.getId());
+            }
+        });
       //  friendList.setAdapter();
 
     }
