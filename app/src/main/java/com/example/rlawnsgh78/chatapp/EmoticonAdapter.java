@@ -92,6 +92,14 @@ public class EmoticonAdapter extends BaseAdapter {
                 Message message = new Message("emoticon~!@" + position, SocketIOManager.getInstance().mLogin.nickname, friendNickname, 1);
                 Gson gson = new Gson();
                 String json = gson.toJson(message);
+                if(!mSocket.connected()){
+                    mSocket.connect();
+                    try {
+                        Thread.sleep(300);
+                    }catch (Exception e){
+
+                    }
+                }
                 mSocket.emit("SendMessage", json);
                 dialogPlus.dismiss();
             }

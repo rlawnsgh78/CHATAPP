@@ -124,7 +124,14 @@ public class ChatActivity extends AppCompatActivity {
 
                 Gson gson = new Gson();
                 String json = gson.toJson(message);
+                if(!mSocket.connected()){
+                    mSocket.connect();
+                    try {
+                        Thread.sleep(300);
+                    }catch (Exception e){
 
+                    }
+                }
                 mSocket.emit("SendMessage", json);
 
                 editChat.setText("");

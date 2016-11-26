@@ -80,7 +80,6 @@ public class FriendListActivity extends AppCompatActivity {
             }catch (Exception e){
 
             }
-
         }
         mSocket.emit("GetFriendList",SocketIOManager.getInstance().mLogin.getId());
 
