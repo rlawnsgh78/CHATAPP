@@ -106,9 +106,15 @@ public class RegisterActivity extends AppCompatActivity {
                 Gson gson = new Gson();
                 String json = gson.toJson(user);
 
-                Type type = new TypeToken<User>(){}.getType();
-                User us2 = gson.fromJson(json,type);
+                if(!mSocket.connected()){
+                    mSocket.connect();
+                    try {
+                        Thread.sleep(300);
+                    }catch (Exception e){
 
+                    }
+
+                }
                 mSocket.emit("RegisterUser", json);
             }
         });

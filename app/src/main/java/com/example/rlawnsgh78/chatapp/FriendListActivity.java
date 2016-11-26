@@ -73,6 +73,15 @@ public class FriendListActivity extends AppCompatActivity {
             }
         });
 
+        if(!mSocket.connected()){
+            mSocket.connect();
+            try {
+                Thread.sleep(300);
+            }catch (Exception e){
+
+            }
+
+        }
         mSocket.emit("GetFriendList",SocketIOManager.getInstance().mLogin.getId());
 
       //  friendList.setAdapter();

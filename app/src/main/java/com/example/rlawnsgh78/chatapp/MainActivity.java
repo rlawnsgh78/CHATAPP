@@ -73,6 +73,16 @@ public class MainActivity extends AppCompatActivity {
                 SocketIOManager.getInstance().mLogin = login;
                 Gson gson = new Gson();
                 String json = gson.toJson(login);
+
+                if(!mSocket.connected()){
+                    mSocket.connect();
+                    try {
+                        Thread.sleep(300);
+                    }catch (Exception e){
+
+                    }
+
+                }
                 mSocket.emit("Login", json);
 
 

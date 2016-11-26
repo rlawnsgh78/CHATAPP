@@ -59,6 +59,15 @@ public class ChatActivity extends AppCompatActivity {
 
         GetMessage getMessage = new GetMessage(SocketIOManager.getInstance().mLogin.nickname, getIntent().getStringExtra("FreindNickname"));
         String json = gson.toJson(getMessage);
+        if(!mSocket.connected()){
+            mSocket.connect();
+            try {
+                Thread.sleep(300);
+            }catch (Exception e){
+
+            }
+
+        }
         mSocket.emit("GetMessageList", json);
 
         mSocket.on("SendMessageRes", new Emitter.Listener() {
