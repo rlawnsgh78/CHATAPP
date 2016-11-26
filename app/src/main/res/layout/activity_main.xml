@@ -54,13 +54,13 @@
         android:layout_alignParentStart="true"
         android:layout_width="160dp" />
 
-    <TextView
-        android:text="Logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="96dp"
-        android:id="@+id/txt_Logo"
-        android:textSize="48sp"
-        android:layout_above="@+id/edit_Id"
-        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/img_Logo"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
 </RelativeLayout>

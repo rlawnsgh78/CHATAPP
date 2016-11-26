@@ -124,7 +124,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="8f7d30d110dee6987f4b20459013c53f1f8ee1bb">
+        sha1="44131ecb8c5c4685edd0865d48116b25b4769745">
         <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_7b7c16bdb18fd77f9c9d7b16aa5cb3525db1a53c\classes.dex" />
     </item>
     <item
@@ -142,7 +142,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="0f8d524419ecc93086db74503bbbff994609b5d9">
+        sha1="02cc000f9c205388b98f0fdae486b056909c136c">
         <dex dex="C:\Users\rlawn\Desktop\CHATAPP\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_b15799a3bcdfcf7412e1f5cd1dcb86dc1ed1aa21\classes.dex" />
     </item>
     <item

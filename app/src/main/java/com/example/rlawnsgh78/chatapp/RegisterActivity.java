@@ -11,7 +11,10 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.rengwuxian.materialedittext.MaterialEditText;
+
+import java.lang.reflect.Type;
 
 import io.socket.client.Socket;
 import io.socket.emitter.Emitter;
@@ -102,6 +105,9 @@ public class RegisterActivity extends AppCompatActivity {
 
                 Gson gson = new Gson();
                 String json = gson.toJson(user);
+
+                Type type = new TypeToken<User>(){}.getType();
+                User us2 = gson.fromJson(json,type);
 
                 mSocket.emit("RegisterUser", json);
             }

@@ -75,8 +75,6 @@ public class FriendListActivity extends AppCompatActivity {
 
         mSocket.emit("GetFriendList",SocketIOManager.getInstance().mLogin.getId());
 
-
-
       //  friendList.setAdapter();
 
     }
